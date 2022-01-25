@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+/*****************
+mixins
+*****************/
+.btn {
+  background: #02bece;
+  color: #20272f;
+  padding: 15px 25px;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  margin-top: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #2b333d;
+  color: #fff;
+}
+
+/*****************
+basic styles
+*****************/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #20272f;
+}
+
+.py {
+  padding: 100px 0;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}
+
+/*****************
+nav
+*****************/
+nav {
+  background: #2b333d;
+}
+
+nav .navBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: flex;
+}
+
+nav .navBar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+}
+
+nav .navBar ul li {
+  margin-left: 30px;
+}
+
+nav .navBar ul li a {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+nav .navBar ul li a:hover {
+  color: #02bece;
+}
+
+nav .navBar .logo {
+  color: #02bece;
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+nav .navBar .logo:hover {
+  color: #fff;
+}
+
+/*****************
+header
+*****************/
+header {
+  background-image: url(/img/header.png);
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+}
+
+/*****************
+about
+*****************/
+.about {
+  background-color: #fff;
+}
+
+.about article {
+  text-align: left;
+}
+
+.about article h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about article p {
+  line-height: 1.7;
+}
+
+/*****************
+works
+*****************/
+.works {
+  background-color: #f1f1f1;
+}
+
+.works article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.works article h2 {
+  margin-bottom: 20px;
+}
+
+.works article div {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 32%;
+          flex: 0 0 32%;
+  padding: 50px 50px 20px 50px;
+}
+
+/*****************
+footer
+*****************/
+footer {
+  text-align: center;
+  color: #fff;
+  background-color: #2b333d;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.secondHeader {
+  background-color: #02bece;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.secondHeader h1 {
+  color: #fff;
+  font-size: 3rem;
+}
+
+/*****************
+blog, radionice
+*****************/
+.blog,
+.radionice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blog .main,
+.radionice .main {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 65%;
+          flex: 0 0 65%;
+}
+
+.blog .main .last,
+.radionice .main .last {
+  margin-top: 50px;
+}
+
+.blog .main a,
+.radionice .main a {
+  overflow: hidden;
+  display: block;
+}
+
+.blog .main a img,
+.radionice .main a img {
+  width: 100%;
+  display: block;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.blog .main a img:hover,
+.radionice .main a img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.blog .main .text,
+.radionice .main .text {
+  background: #eee;
+  padding: 20px;
+}
+
+.blog .main .text h3,
+.radionice .main .text h3 {
+  text-transform: none;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.blog aside,
+.radionice aside {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+  background: #2b333d;
+  color: #fff;
+  padding: 30px 30px 0 30px;
+}
+
+.blog aside p,
+.radionice aside p {
+  line-height: 1.7;
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+.blog aside hr,
+.radionice aside hr {
+  display: block;
+  content: "";
+  border: none;
+  background: gray;
+  height: 1px;
+  margin: 25px 0;
+}
+
+.blog aside ul,
+.radionice aside ul {
+  line-height: 1.8;
+}
+/*# sourceMappingURL=style.css.map */
