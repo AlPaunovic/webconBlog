@@ -257,25 +257,26 @@ blog, radionice
   margin-bottom: 20px;
 }
 
-.blog aside,
-.radionice aside {
+.blog .aside,
+.radionice .aside {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 25%;
           flex: 0 0 25%;
-  background: #2b333d;
+  height: 500px;
   color: #fff;
-  padding: 30px 30px 0 30px;
+  padding: 30px;
+  background: #2b333d;
 }
 
-.blog aside p,
-.radionice aside p {
+.blog .aside p,
+.radionice .aside p {
   line-height: 1.7;
   font-weight: 300;
   margin-top: 20px;
 }
 
-.blog aside hr,
-.radionice aside hr {
+.blog .aside hr,
+.radionice .aside hr {
   display: block;
   content: "";
   border: none;
@@ -284,8 +285,8 @@ blog, radionice
   margin: 25px 0;
 }
 
-.blog aside ul,
-.radionice aside ul {
+.blog .aside ul,
+.radionice .aside ul {
   line-height: 1.8;
 }
 /*# sourceMappingURL=style.css.map */
