@@ -215,10 +215,12 @@ blog, radionice
     }
     .aside {
         flex: 0 0 25%;
-        height: 500px;
+        // height: 500px; ogranicavam mu duzinu na 500px
+        // margin-bottom: auto;  <-- bolje je uraditi ovo
         color: $white;
         padding: 30px;
         background: $primary;
+        align-self: flex-start; //ili najbolje ovo
 
         p {
             line-height: 1.7;
